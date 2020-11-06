@@ -10,16 +10,27 @@
 </head>
 <body>
   <div class="container">
-  <h1>Avengers Character Search</h2>
-    <div class="search">
-      <h3>Search by Full Name or Alias</h3>
-      <form action="" method = 'post'>
-        <input type="text" name="name" pattern=""
-        placeholder="e.g. Captain America or Steve Rogers">
-        <input id="sub" type="submit" name="Submit">
-      </form>
+    <div class="header">
+      <h1>Avengers Character Search</h2>
     </div>
-    <h2>RESULT</h2>
+    <div class="container2">
+      <div class="search">
+        <h3>Search by Full Name or Alias</h3>
+        <form id ="myform" method = 'POST'>
+          <input
+          id = "in"
+          type="text" name="search"
+          placeholder="e.g. Captain America or Steve Rogers"
+          pattern="([a-zA-Z])\w+\s*([a-zA-Z])*"
+          title="Letters only!">
+          <input id="sub" type="submit" name="Search">
+        </form>
+      </div>
+      <h2 id="result">RESULT</h2>
+      <div id="results">
+
+      </div>
+    </div>
   </div>
 </body>
 </html>

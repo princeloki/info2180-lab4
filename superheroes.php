@@ -1,5 +1,4 @@
 <?php
-
 $superheroes = [
   [
       "id" => 1,
@@ -60,13 +59,24 @@ $superheroes = [
       "name" => "Wanda Maximoff",
       "alias" => "Scarlett Witch",
       "biography" => "Notably powerful, Wanda Maximoff has fought both against and with the Avengers, attempting to hone her abilities and do what she believes is right to help the world.",
-  ], 
+  ],
 ];
 
-?>
+$search = ucwords($_POST["search"]);
+ if($search !=""){
+   foreach($superheroes as $hero){
+     if ($search == $hero["name"] or $search == $hero["alias"]){
+       echo(json_encode($hero));
+       return;
+     }
+   }
+   echo "No match";
+   return;
+ }
 
-<ul>
+
+ ?>
+
 <?php foreach ($superheroes as $superhero): ?>
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
-</ul>

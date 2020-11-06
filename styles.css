@@ -1,0 +1,83 @@
+body{
+  margin: 0;
+  background: rgb(225, 227, 225);
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",
+    sans-serif;
+}
+
+.container{
+  margin: 0;
+  min-height: 800px;
+  letter-spacing: 0;
+}
+
+.container2{
+  max-width: 960px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.header{
+  background: rgb(57, 113, 158);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.header h1{
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.search{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.search h3{
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.search form input{
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.search #in{
+  width: 80%;
+  font-size: 0.8em;
+}
+
+.search #sub{
+  background: rgb(198, 60, 60);
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+#result{
+  border-bottom: 2px solid rgb(174, 174, 175);
+  padding-bottom: 20px;
+  font-size: 1.9em;
+}
+#results h4, #results h3{
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#results h3{
+  font-size: 1.2em;
+}
+
+#results h4{
+  font-size: 0.8em;
+}
+#results .danger{
+  color: rgb(222, 82, 68);
+  font-size: 1.2em;
+}
