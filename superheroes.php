@@ -63,6 +63,9 @@ $superheroes = [
 ];
 
 $search = ucwords($_POST["search"]);
+$search = trim($search);
+$search = stripslashes($search);
+
  if($search !=""){
    foreach($superheroes as $hero){
      if ($search == $hero["name"] or $search == $hero["alias"]){
